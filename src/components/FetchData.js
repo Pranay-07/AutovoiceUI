@@ -38,52 +38,52 @@ export class FetchData extends Component {
       <div>
         <h1 id="tabelLabel" >Customized Instruction set information</h1>
         <p>This component demonstrates fetching data from the server.</p>
-        <select id="LanguageSelection">
+        {/* <select id="LanguageSelection">
           <option value="English">English(US)</option>
           <option value="Hindi">Hindi</option>
           <option value="Chinese">Chinese</option>
-        </select>
-
+        </select> */}
+         <LanguageDropDown></LanguageDropDown>
         <select>
           <option value="AddSet">AddSet</option>
           <option value="Hindi">Hindi</option>
           <option value="Chinese">Chinese</option>
         </select>
 
-        <img src={edit} onClick="" alt="Edit" height="20" width="20" border="2"></img>&nbsp;&nbsp;
+        <img src={edit} onClick="" alt="Edit" height="20" width="20" border="2" style={{marginLeft:560}}></img>&nbsp;&nbsp;
         <img src={deleteImg} onClick="" alt="Edit" height="20" width="20" border="2"></img>&nbsp;&nbsp;
         <img src={send} OnClick="" alt="Edit" height="20" width="20" border="2"></img>
         <br></br>
         <br></br>
         <table class="Tables">
-          <tr style={{ "borderWidth": "1px", 'backgroundColor': "#white", 'borderStyle': 'solid' }} >
+          <tr style={{ "borderWidth": "2px", 'backgroundColor': "#white", 'borderStyle': 'solid' }} >
             <th>Description</th>
             <th>Instruction label</th>
             <th>Duration</th>
             <th>Instruction text</th>
           </tr>
-          <tr style={{ "borderWidth": "1px", 'backgroundColor': "white", 'borderStyle': 'solid' }}>
+          <tr style={{ "borderWidth": "2px", 'backgroundColor': "white", 'borderStyle': 'solid' }}>
             <td >Table movement</td>
             <td><SoundButton wave={wave} /><span>Normal</span></td>
             <td>0:04</td>
             <td>Please hold still while the table moves</td>
 
           </tr>
-          <tr style={{ "borderWidth": "1px", 'backgroundColor': "#white", 'borderStyle': 'solid' }}>
+          <tr style={{ "borderWidth": "2px", 'backgroundColor': "#white", 'borderStyle': 'solid' }}>
             <td></td>
             <td><SoundButton wave={wave} />Scanset </td>
             <td>0:04</td>
             <td>In between the next few scans, the table will move</td>
 
           </tr>
-          <tr style={{ "borderWidth": "1px", 'backgroundColor': "white", 'borderStyle': 'solid' }}>
+          <tr style={{ "borderWidth": "2px", 'backgroundColor': "white", 'borderStyle': 'solid' }}>
             <td>Scan duration</td>
             <td><SoundButton wave={wave} />Above 5 minutes </td>
             <td>0:06</td>
             <td>The next scan will last for a little over five minutes</td>
 
           </tr>
-          <tr style={{ "borderWidth": "1px", 'backgroundColor': "white", 'borderStyle': 'solid' }}>
+          <tr style={{ "borderWidth": "2px", 'backgroundColor': "white", 'borderStyle': 'solid' }}>
             <td>             </td>
             <td><SoundButton wave={wave} />Above 10 minutes </td>
             <td>0:04</td>
@@ -91,7 +91,7 @@ export class FetchData extends Component {
 
           </tr>
 
-          <tr style={{ "borderWidth": "1px", 'backgroundColor': "white", 'borderStyle': 'solid' }}>
+          <tr style={{ "borderWidth": "2px", 'backgroundColor': "white", 'borderStyle': 'solid' }}>
             <td>             </td>
             <td><SoundButton wave={wave} />Breath scan </td>
             <td>0:03</td>
@@ -100,7 +100,7 @@ export class FetchData extends Component {
           </tr>
         </table>
 
-            <LanguageDropDown></LanguageDropDown>
+           
       </div>
     );
   }

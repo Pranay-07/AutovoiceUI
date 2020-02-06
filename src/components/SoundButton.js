@@ -28,7 +28,7 @@ class SoundButton extends React.Component {
     render() {
       return (
         
-          <button onClick={this.togglePlay} height="15">{this.state.play ? 'Pause' : 'Play'}</button>
+          <button onClick={this.togglePlay} height="10" width="10" style={{marginRight:10}}>{this.state.play ? 'Pause' : 'Play'}</button>
         
       );
     }
